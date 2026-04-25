@@ -3,56 +3,94 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Janitor — Update your dev tools without the mess</title>
-  <meta name="description" content="A lightweight macOS app for updating Homebrew, Docker, npm, pipx, and custom terminal commands." />
+  <title>Janitor — Keep your dev machine tidy</title>
+  <meta name="description" content="Janitor keeps Homebrew, Docker, npm, and your terminal tools fresh from one friendly macOS app." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
+  <div class="noise"></div>
+
+  <header class="nav">
     <a class="brand" href="#">
-      <img src="../assets/janitor-icon.png" alt="Janitor icon">
-      Janitor
+      <img src="./janitor.png" alt="Janitor app icon" />
+      <span>Janitor</span>
     </a>
-    <a class="download-small" href="#">Download</a>
+
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+    </nav>
   </header>
 
   <main>
     <section class="hero">
-      <img class="icon" src="../assets/janitor-icon.png" alt="Janitor app icon">
-      <p class="eyebrow">A tiny command updater for macOS</p>
-      <h1>Keep your terminal tools up to date.</h1>
-      <p class="lead">
-        Janitor gives you a simple, friendly place to run your maintenance commands:
-        Homebrew upgrades, Docker cleanup, global package updates, and your own scripts.
-      </p>
-      <div class="actions">
-        <a class="button dark" href="#">Download for Mac</a>
-        <a class="button light" href="#features">See features</a>
+      <div class="hero-copy">
+        <div class="pill">macOS utility for terminal people</div>
+        <h1>Your Mac’s<br><span>command-line cleaner.</span></h1>
+        <p>
+          Janitor keeps your dev tools fresh: Homebrew, Docker, npm, Python packages,
+          and custom commands — all from one tiny native Mac app.
+        </p>
+
+        <div class="actions" id="download">
+          <a class="button primary" href="#">Download for Mac</a>
+        </div>
+
+        <p class="hint">Free while in beta · Apple Silicon + Intel</p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <img class="app-icon" src="../assets/janitor-icon.png" alt="" />
+
+        <div class="terminal-card">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <pre><code>$ brew update
+$ brew upgrade
+$ docker system prune
+$ npm update -g
+<span>✓ all tidy</span></code></pre>
+        </div>
       </div>
     </section>
 
-    <section class="window">
-      <div class="window-header">
-        <div class="traffic"><span></span><span></span><span></span></div>
-        <strong>Janitor Sweep</strong>
+    <section class="feature-strip" id="features">
+      <article>
+        <strong>One-click sweeps</strong>
+        <span>Run your favorite maintenance commands without living in Terminal.</span>
+      </article>
+      <article>
+        <strong>Command groups</strong>
+        <span>Separate Brew, Docker, npm, Python, and custom project tasks.</span>
+      </article>
+      <article>
+        <strong>Safe previews</strong>
+        <span>Review what will run before Janitor touches anything.</span>
+      </article>
+    </section>
+
+    <section class="showcase" id="commands">
+      <div>
+        <h2>Built for the stuff you actually update.</h2>
+        <p>
+          Add commands once, group them by tool, then run your cleanup routine whenever
+          your Mac starts feeling dusty.
+        </p>
       </div>
-      <div class="rows">
-        <div class="row"><div><strong>Homebrew</strong><span>brew update && brew upgrade</span></div><em>Ready</em></div>
-        <div class="row"><div><strong>Docker</strong><span>docker system prune</span></div><em>Ready</em></div>
-        <div class="row"><div><strong>Node tools</strong><span>npm update -g</span></div><em>Ready</em></div>
+
+      <div class="command-grid">
+        <div><code>brew upgrade</code><span>Homebrew packages</span></div>
+        <div><code>docker pull</code><span>Fresh container images</span></div>
+        <div><code>npm update -g</code><span>Global npm tools</span></div>
+        <div><code>pipx upgrade-all</code><span>Python CLIs</span></div>
       </div>
     </section>
 
-    <section class="features" id="features">
-      <article><h2>Simple command groups</h2><p>Create sweeps for Brew, Docker, npm, Python, Git, or anything you run often.</p></article>
-      <article><h2>Review before running</h2><p>See every command before it executes so your cleanup routine stays predictable.</p></article>
-      <article><h2>Made for Mac</h2><p>Designed to feel lightweight, native, and out of your way.</p></article>
-    </section>
-
-    <section class="final">
-      <h2>Stop forgetting upgrade commands.</h2>
-      <p>Give your Mac a little sweep whenever your toolchain feels dusty.</p>
-      <a class="button dark" href="#">Download for Mac</a>
+    <section class="cta">
+      <h2>Let Janitor handle the boring part.</h2>
+      <p>Spend less time remembering commands and more time building.</p>
+      <a class="button primary" href="#">Download for Mac</a>
     </section>
   </main>
 
