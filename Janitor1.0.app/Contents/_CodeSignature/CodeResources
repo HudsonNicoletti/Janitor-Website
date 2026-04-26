@@ -10,15 +10,7 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		uoWk5Gwlj76TLbENmk27GAAEyQA=
-		</data>
-		<key>Resources/janitor.png</key>
-		<data>
-		6Yv3+GZZHFMh6HiOcsXKDbrIpj0=
-		</data>
-		<key>Resources/janitor_icon_option_9.af</key>
-		<data>
-		vqvBNTVQ1M3OMAS+rxQvSCtGUZ0=
+		C7HkgC8bJ8bcndzc/WWdl11lmFA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -27,7 +19,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			OZiZlmdSrp+MqrS3AIuXMckd0VU=
+			fTpsmED3eNbNDjZxJEyQ9wtiSh8=
 			</data>
 			<key>requirement</key>
 			<string>identifier "Janitor.debug" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: hudnicoletti@icloud.com (BMX27ACGYV)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -52,21 +44,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W5lo/Ew21ww2bgBIcdeOdBRSuDgHYWLeFo7i+JIUqqc=
-			</data>
-		</dict>
-		<key>Resources/janitor.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CdZUHADNstkF3Z5kOK0aa8AaHWax1oxQ36tfGSp4AuA=
-			</data>
-		</dict>
-		<key>Resources/janitor_icon_option_9.af</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dFJRFXVwOpdKhIfsg5UN4vfk3uAVe49lYd44D9axyDI=
+			82GjCcHyh+hOqTxEQnHx+Q50V+YUZlv6X/w+nCfH98g=
 			</data>
 		</dict>
 	</dict>
